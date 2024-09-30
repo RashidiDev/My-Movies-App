@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/font/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/font/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/font/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+  .ripple {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+  }
+}
